@@ -1,0 +1,164 @@
+{
+    "ReportVersion" : 2.3,
+    "RefurbOptions" : {
+        "LanguageSetup" : null
+    },
+    "Computer" : {
+        "Manufacturer" : null,
+        "Model" : null,
+        
+        "SCHolTechNumber" : null,
+        "SCHolStatus" : null,
+        "SCHolGrade" : null,
+        "SCHolGradeRationale" : null,
+        "SCHolLabelPresent" : false,
+
+        "OutOfDateStickersRemoved": false,
+
+        "Notes" :null,
+
+        "Benchmark" : {
+            "OverallScore" : null,
+            "CPUSingleScore" : null,
+            "CPUGamingScore" : null,
+            "BenchmarkUrl" : null
+        },
+
+        "Hardware" : {
+            "Battery" : {
+                "Present" : false,
+                "ApproximateChargeInMinutes" : 0
+            },
+            "Keyboard" : {
+                "TestedOk" : false,
+                "Notes" : null,
+                "HotKeys" : {
+                    "BrightnessKeysPresent" : false,
+                    "BrightnessKeysWorking" : false,
+                    "VolumeKeysPresent" : false,
+                    "VolumeKeysWorking" : false,
+                    "Notes" : null
+                },
+                "Languages" : null
+            },
+            "TrackPad" : {
+                "Present" : false,
+                "LeftClickOk" : null,
+                "RightClickOk" : null,
+                "TwoFingerScroll" : null,
+                "NoGestures" : null,
+                "Notes" : null
+            },
+            "Mouse" : {
+                "Present" : false,
+                "LeftClickOk" : null,
+                "RightClickOk" : null,
+                "ScrollWheelOk" : null,
+                "Notes" : null
+            },
+            "Processor" : {
+                "Manufacturer" : null,
+                "Model" : null,
+                "Cores" : null,
+                "Threads" : null,
+                "Architecture" : null,
+                "ClockSpeed" : null
+            },
+            "Mainboard" : {
+                "BIOS" : {
+                    "Manufacturer" : null,
+                    "Name" : null,
+                    "ReleaseDate" : null,
+                    "Version" : null,
+                    "SecureBootEnabled" : false,
+                    "UEFI" : false
+                },
+                "TPM" : {
+                    "Present" : false,
+                    "Version" : null
+                }
+            },
+            "Camera" : {
+                "Present" : false,
+                "Quality" : null
+            },
+            "Microphone" : {
+                "Present" : false,
+                "Quality" : null
+            },
+            "Speakers" : {
+                "Present" : false,
+                "TestedOK" : null,
+                "Notes" : null
+            },
+            "Screen" : {
+                "DiagonalSize" : null,
+                "PixelsWide" : null,
+                "PixelsHigh" : null,
+                "BitDepth" : null
+            },
+            "Charger" : {
+                "TestedOk" : false
+            },
+            "MemoryModules" : [],
+            "Disks" : [],
+            "NetworkAdapters" : [],
+            "GraphicsAdapters" : []
+        },
+        "Software" : {
+            "Windows" : {
+                "Architecture" : null,
+                "Version" : null,
+                "ComputerName" : null,
+                "IsActivated" : false,
+                "User" : {
+                    "Name" : null,
+                    "Password" : null,
+                    "CredentialsValidated" : false
+                },
+                "Updates" : {
+                    "InstalledUpdates" : [],
+                    "CountRemaining" : 0
+                },
+                "WirelessNetworksRemoved" : false,
+                "Desktop" : {
+                    "FolderOverWorldIcon" : false,
+                    "IconsSet" : false,
+                    "SnapToGridOff" : false,
+                    "SCHolTechWallpaperSet" : false
+                },
+                "StartMenu" : {
+                    "Arranged" : false
+                },
+                "Taskbar" : {
+                    "SearchboxIcon" : false,
+                    "TaskViewRemoved" : false,
+                    "CortanaRemoved" : false,
+                    "NewsAndInterestsRemoved" : false
+                },
+                "Cursor" : {
+                    "SchemeSetToBlackXL" : false
+                }
+            },
+            "Edge" : {
+                "Present" : false,
+                "HistoryCleared" : false,
+                "SetupBannerDismissed" : false,
+                "GoogleAsHomepage" : false,
+                "AddGoogleToFavourites" : false,
+                "EnableFavouritesBar" : false
+            },
+            "Zoom" : {
+                "Present" : false,
+                "TestedOK" : false,
+                "Notes" : null
+            },
+            "MSTeams" : {
+                "Present" : false
+            },
+            "LibreOffice" : {
+                "Present" : false
+            }
+        }
+    }
+}
