@@ -1,4 +1,4 @@
 # computer-refurb
 
 
-[Multi-language Support](/docs/multilanguagesupport.md)
+[Multi-language Support](/Docs/MultiLanguageSupport.md)
