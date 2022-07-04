@@ -14,7 +14,12 @@ Ensure the machine is connected to the internet, as some artifacts are downloade
 To start the refurb process, either browse to the directory and right click on startprovision.bat, then run as administrator. Or run cmd or powershell as admin and execcute the startprovision.bat script.
 
 ### Trobubleshooting
-If at any point the refurb process fails to continue from the last step, the last script load is written to C:\schol-setup.txt. You can copy and paste the last command into a powershell window running as administrator to continue the process from where it last completed.
+
+#### Windows Updates prompt for reboot
+Depending on which drivers etc are installed, Windows Update may prompt for a reboot. Do not reboot, simply hit enter to continue.
+
+#### The next step doesn't load
+This can occasionally happen if the machine crashes or if the refurb scripts are running from a network source that becomes unavailable. If at any point the refurb process fails to continue from the last step, the last script load is written to C:\schol-setup.txt. You can copy and paste the last command into a powershell window running as administrator to continue the process from where it last completed.
 
 ## Output
 The refurb process outputs a report file into the reports folder. This can be provided to SCHolTech at the end to complete the TE2T report.
