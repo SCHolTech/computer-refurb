@@ -33,11 +33,11 @@ $report.Computer.Software.Windows.WirelessNetworksRemoved = $true
 Set-Report -Report $report
 Write-Report -Report $report
 
-[string]$currentLocation = Get-Location
-if($currentLocation.StartsWith($env:SystemDrive)){
-    Set-Report -Report $report -SaveLocation "\\192.168.0.200\schol\v2"
-    Remove-Item $PSScriptRoot -Recurse -Force
-}
+# [string]$currentLocation = Get-Location
+# if($currentLocation.StartsWith($env:SystemDrive)){
+#     Set-Report -Report $report -SaveLocation "\\192.168.0.200\schol\v2"
+#     Remove-Item $PSScriptRoot -Recurse -Force
+# }
 
 Read-Host -Prompt "When you are ready to remove wifi connections, hit enter"
 Write-Host "Removing wifi..."
