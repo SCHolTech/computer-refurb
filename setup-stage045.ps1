@@ -8,7 +8,12 @@ Write-LocalLog -Message "Begin $($MyInvocation.MyCommand.Name)"
 Write-Host "The computer is currently named $env:computername"
 $report = Get-Report
 
-
+$userBenchmarkFile = "UserBenchMark.exe"
+$userBenchmarkFilePath = "$PSScriptRoot\Software\$userBenchmarkFile"
+$userBenchmarkExists = Test-Path -Path $userBenchmarkFilePath
+if($userBenchmarkExists -eq $false) {
+    Invoke-WebRequest -Uri "https://scholtech.blob.core.windows.net/software/$userBenchmarkFile" -OutFile $userBenchmarkFilePath
+}
 Start-Process -FilePath $PSScriptRoot\Software\UserBenchMark.exe
 $report.Computer.Benchmark.OverallScore = Read-Host -Prompt "Benchmark Score"
 $report.Computer.Benchmark.CPUSingleScore = Read-Host -Prompt "Benchmark Single CPU Score"

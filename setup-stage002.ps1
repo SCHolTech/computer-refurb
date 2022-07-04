@@ -9,7 +9,7 @@ if($currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administr
 Set-Location $PSScriptRoot
 Write-Host "The computer is currently named $env:computername"
 
-$runFromLocal = (Read-Host -Prompt "Run Setup Locally? (y/n)").ToLower() -eq "y"
+$runFromLocal = $false #(Read-Host -Prompt "Run Setup Locally? (y/n)").ToLower() -eq "y"
 
 if($runFromLocal -eq $true) {
     $newRoot = Copy-ToLocal
