@@ -8,6 +8,7 @@ Write-LocalLog -Message "Begin $($MyInvocation.MyCommand.Name)"
 Write-Host "The computer is currently named $env:computername"
 $report = Get-Report
 
+Write-Host "When loaded, please run a benchmark to completion then complete the following questions"
 $userBenchmarkFile = "UserBenchMark.exe"
 $userBenchmarkFilePath = "$PSScriptRoot\Software\$userBenchmarkFile"
 $userBenchmarkExists = Test-Path -Path $userBenchmarkFilePath
