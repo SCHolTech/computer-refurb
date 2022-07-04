@@ -12,6 +12,7 @@ $userBenchmarkFile = "UserBenchMark.exe"
 $userBenchmarkFilePath = "$PSScriptRoot\Software\$userBenchmarkFile"
 $userBenchmarkExists = Test-Path -Path $userBenchmarkFilePath
 if($userBenchmarkExists -eq $false) {
+    Write-Host "Downloading $userBenchmarkFile..."
     Invoke-WebRequest -Uri "https://scholtech.blob.core.windows.net/software/$userBenchmarkFile" -OutFile $userBenchmarkFilePath
 }
 Start-Process -FilePath $PSScriptRoot\Software\UserBenchMark.exe

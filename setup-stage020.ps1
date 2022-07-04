@@ -21,6 +21,7 @@ $teamsInstallerFile = "Teams_windows_x64.msi"
 $teamsInstallerFilePath = "$PSScriptRoot\Software\$teamsInstallerFile"
 $teamsInstallerExists = Test-Path -Path $teamsInstallerFilePath
 if($teamsInstallerExists -eq $false) {
+    Write-Host "Downloading $teamsInstallerFile..."
     Invoke-WebRequest -Uri "https://scholtech.blob.core.windows.net/software/$teamsInstallerFile" -OutFile $teamsInstallerFilePath
 }
 Install-MSIPackage -PackageName "Microsoft Teams" -Arguments "/i $teamsInstallerFilePath OPTIONS=""noAutoStart=true"" ALLUSERS=1"
@@ -30,6 +31,7 @@ $libreOfficeInstallerFile = "LibreOffice_7.2.6_Win_x64.msi"
 $libreOfficeInstallerFilePath = "$PSScriptRoot\Software\$libreOfficeInstallerFile"
 $libreOfficeInstallerExists = Test-Path -Path $libreOfficeInstallerFilePath
 if($libreOfficeInstallerExists -eq $false) {
+    Write-Host "Downloading $libreOfficeInstallerFile..."
     Invoke-WebRequest -Uri "https://scholtech.blob.core.windows.net/software/$libreOfficeInstallerFile" -OutFile $libreOfficeInstallerFilePath
 }
 $report.Computer.Software.LibreOffice.Present = Install-MSIPackage -PackageName "Libre Office" `
@@ -40,6 +42,7 @@ $zoomInstallerFile = "ZoomInstallerFull.msi"
 $zoomInstallerFilePath = "$PSScriptRoot\Software\$zoomInstallerFile"
 $zoomInstallerExists = Test-Path -Path $zoomInstallerFilePath
 if($zoomInstallerExists -eq $false) {
+    Write-Host "Downloading $zoomInstallerFile..."
     Invoke-WebRequest -Uri "https://scholtech.blob.core.windows.net/software/$zoomInstallerFile" -OutFile $zoomInstallerFilePath
 }
 $report.Computer.Software.Zoom.Present = Install-MSIPackage -PackageName "Zoom" `
@@ -50,6 +53,7 @@ $edgeInstallerFile = "MicrosoftEdgeEnterprisex64.msi"
 $edgeInstallerFilePath = "$PSScriptRoot\Software\$edgeInstallerFile"
 $edgeInstallerExists = Test-Path -Path $edgeInstallerFilePath
 if($edgeInstallerExists -eq $false) {
+    Write-Host "Downloading $edgeInstallerFile..."
     Invoke-WebRequest -Uri "https://scholtech.blob.core.windows.net/software/$edgeInstallerFile" -OutFile $edgeInstallerFilePath
 }
 $report.Computer.Software.Edge.Present = Install-MSIPackage -PackageName "Microsoft Edge" `
