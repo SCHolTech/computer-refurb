@@ -4,7 +4,7 @@
 
 ### Installing Windows
 Create a Windows 10 USB using the Microsoft Windows Media Creation Tool.
-Copy the [autounattend.xml](/assets/autounattend.xml) to the root of the USB. Perform a fresh install of Windows.
+Copy the [autounattend.xml](/Assets/autounattend.xml) to the root of the USB. Perform a fresh install of Windows.
 
 ### Running refurb 
 Download and copy the contents of this repository onto a USB stick or network drive which will be accessible throughout the refurb process.
