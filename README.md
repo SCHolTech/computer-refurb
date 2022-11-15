@@ -6,6 +6,10 @@
 Create a Windows 10 USB using the Microsoft Windows Media Creation Tool.
 Copy the [autounattend.xml](/Assets/autounattend.xml) to the root of the USB. Perform a fresh install of Windows.
 
+#### Multi Language Keyboards
+If you are adding multiple keyboard layouts, when running the Windows OOBE, choose UK as the location, and UK as the first keyboard layout. Then choose "Add Layout" and add the second layout, choosing the country first, then the layout.
+E.g. for example for Ukraine with Ukraine keyboard choose Ukraine > Enchanced Ukrainian. For Ukraine with Russian keyboard choose Ukraine > Russian
+
 ### Running refurb 
 Download and copy the contents of this repository onto a USB stick or network drive which will be accessible throughout the refurb process.
 
