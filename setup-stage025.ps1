@@ -52,7 +52,7 @@ Start-Sleep -Seconds 10
 Write-Host "Adding new items.."
 Copy-Item -Path "$Env:ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk" -Destination "$env:USERPROFILE\Desktop\Microsoft Edge.lnk"
 Start-Sleep -Seconds 2
-Copy-Item -Path "$Env:ProgramData\Microsoft\Windows\Start Menu\Programs\LibreOffice 7.2\LibreOffice Writer.lnk" -Destination $env:USERPROFILE\Desktop\Documents.lnk
+Copy-Item -Path "$Env:ProgramData\Microsoft\Windows\Start Menu\Programs\LibreOffice 7.4\LibreOffice Writer.lnk" -Destination $env:USERPROFILE\Desktop\Documents.lnk
 Start-Sleep -Seconds 2
 Copy-Item -Path "$Env:APPDATA\Microsoft\Windows\Start Menu\Programs\Microsoft Teams.lnk" -Destination "$env:USERPROFILE\Desktop\Microsoft Teams.lnk"
 Start-Sleep -Seconds 2
