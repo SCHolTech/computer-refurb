@@ -1,5 +1,5 @@
 {
-    "ReportVersion" : 2.3,
+    "ReportVersion" : 2.4,
     "RefurbOptions" : {
         "LanguageSetup" : null
     },
@@ -21,7 +21,8 @@
             "OverallScore" : null,
             "CPUSingleScore" : null,
             "CPUGamingScore" : null,
-            "BenchmarkUrl" : null
+            "BenchmarkUrl" : null,
+            "HDVideoPlayback" : null
         },
 
         "Hardware" : {

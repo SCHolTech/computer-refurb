@@ -10,6 +10,7 @@
 . $PSScriptRoot\Functions\Test-HotKeys.ps1
 . $PSScriptRoot\Functions\Test-Battery.ps1
 . $PSScriptRoot\Functions\Test-Speakers.ps1
+. $PSScriptRoot\Functions\Test-HDVideoPlayback.ps1
 . $PSScriptRoot\Functions\Install-WindowsUpdates.ps1
 . $PSScriptRoot\Functions\Set-LanguageOptions.ps1
 
@@ -30,6 +31,7 @@ $report = Test-Mouse -Report $report
 $report = Test-Hotkeys -Report $report
 $report = Test-Battery -Report $report
 $report = Test-Speakers -Report $report
+$report = Test-HDVideoPlayback -Report $report
 #test mic
 #test camera
 #test charger
