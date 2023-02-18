@@ -27,7 +27,7 @@ if($teamsInstallerExists -eq $false) {
 Install-MSIPackage -PackageName "Microsoft Teams" -Arguments "/i $teamsInstallerFilePath OPTIONS=""noAutoStart=true"" ALLUSERS=1"
 
 
-$libreOfficeInstallerFile = "LibreOffice_7.2.6_Win_x64.msi"
+$libreOfficeInstallerFile = "LibreOffice_7.4.5_Win_x64.msi"
 $libreOfficeInstallerFilePath = "$PSScriptRoot\Software\$libreOfficeInstallerFile"
 $libreOfficeInstallerExists = Test-Path -Path $libreOfficeInstallerFilePath
 if($libreOfficeInstallerExists -eq $false) {

@@ -9,14 +9,14 @@ Write-Host "The computer is currently named $env:computername"
 $report = Get-Report
 
 Write-Host "When loaded, please run a benchmark to completion then complete the following questions"
-$userBenchmarkFile = "UserBenchMark.exe"
+$userBenchmarkFile = "UserBenchMarkInstaller.exe"
 $userBenchmarkFilePath = "$PSScriptRoot\Software\$userBenchmarkFile"
 $userBenchmarkExists = Test-Path -Path $userBenchmarkFilePath
 if($userBenchmarkExists -eq $false) {
     Write-Host "Downloading $userBenchmarkFile..."
     Invoke-WebRequest -Uri "https://scholtech.blob.core.windows.net/software/$userBenchmarkFile" -OutFile $userBenchmarkFilePath
 }
-Start-Process -FilePath $PSScriptRoot\Software\UserBenchMark.exe
+Start-Process -FilePath $PSScriptRoot\Software\$userBenchmarkFile
 $report.Computer.Benchmark.OverallScore = Read-Host -Prompt "Benchmark Score"
 $report.Computer.Benchmark.CPUSingleScore = Read-Host -Prompt "Benchmark Single CPU Score"
 $report.Computer.Benchmark.CPUGamingScore = Read-Host -Prompt "Benchmark Gaming CPU Score"
